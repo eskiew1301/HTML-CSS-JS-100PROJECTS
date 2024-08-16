@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Sign up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <!-- This div represent the register form -->
+      <div class="form signup">
+        <header>Register</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="email" placeholder="Enail Address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupcheck" />
+            <label for="Sign">I accept all terms and conditions</label>
+          </div>
+          <input type="submit" value="signup" />
+        </form>
+      </div>
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot password</a>
+          <input type="submit" value="login" />
+        </form>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
