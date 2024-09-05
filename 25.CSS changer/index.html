@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Changer Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Change the CSS of the image below! with the help of the sliders</h1>
+      <span class="heading">JavaScript</span>
+
+      <div class="css-controller">
+        <label for="width">Base Color</label>
+        <input type="color" name="base" id="base" value="#ff0000" />
+        <label for="width">width:</label>
+        <input
+          type="range"
+          name="width"
+          id="width"
+          min="0"
+          max="100"
+          value="30"
+          data-sizing="%"
+        />
+        <label for="border-radius">Border Radius:</label>
+        <input
+          type="range"
+          name="border-radius"
+          id="border-radius"
+          min="0"
+          max="100"
+          value="50"
+          data-sizing="px"
+        />
+        <label for="padding">Padding:</label>
+        <input
+          type="range"
+          name="padding"
+          id="padding"
+          min="10"
+          max="200"
+          value="00"
+          data-sizing="px"
+        />
+        <label for="blur">Blur:</label>
+        <input
+          type="range"
+          name="blur"
+          id="blur"
+          min="0"
+          max="25"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <img
+        src="https://th.bing.com/th/id/OIP.H2VSAEOvqv5lTFUERD9nXgHaJ4?rs=1&pid=ImgDetMain"
+        alt="Nature Image"
+      />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
